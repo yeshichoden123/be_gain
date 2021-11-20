@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".activities.FeedbackActivity">
+
+    <!-- Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/dark_gray">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_white"/>
+
+        <!-- Toolbar title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Feedback"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Enter your feedback below: "
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedback"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/feedbackEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_edttext01"
+                    android:drawablePadding="10dp"
+                    android:hint="Type here"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray01"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <!-- submit Button-->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scrollV"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button01"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "592015348735",
+    "project_id": "be-gain",
+    "storage_bucket": "be-gain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592015348735:android:34e60b82a485c794ea8dca",
+        "android_client_info": {
+          "package_name": "com.android.be_gain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592015348735-pm7p8p6dsm81is9ogtsd5gs8inr6ccda.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.be_gain",
+            "certificate_hash": "28a8bd2239ed3fce859f92765433962796cd1386"
+          }
+        },
+        {
+          "client_id": "592015348735-2r1dvdmhpuvgp904qt84iirgtlthvkpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxyOU6tVlp0qPGIysAm4KinAyRphDoYXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592015348735-2r1dvdmhpuvgp904qt84iirgtlthvkpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".activities.ProfileEditActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar01">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_white"
+            android:background="@android:color/transparent"
+            android:layout_margin="10dp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Edit Profile"
+            android:textColor="@color/white"
+            android:textSize="28sp"/>
+
+        <!-- shapeable image view with rounded corners for provile image-->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/titleTv"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_person_gray"
+            app:shapeAppearance="@style/styleRoundCornersImage"/>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="225dp">
+
+        <EditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edttext01"
+            android:drawableStart="@drawable/ic_category_gray"
+            android:drawablePadding="10dp"
+            android:hint="Name"
+            android:inputType="textPersonName|textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray01"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add category button-->
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_button01"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:layout_below="@id/nameTil"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_below="@id/updateBtn">
+
+        <TextView
+            android:id="@+id/changePw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:text="Change Password?"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="210dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

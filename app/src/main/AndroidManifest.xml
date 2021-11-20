@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.be_gain">
+    <!-- All required permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activities.WonActivity"></activity>
+        <activity android:name=".activities.QuizActivity" />
+        <activity android:name=".activities.FeedbackActivity" />
+        <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".activities.PasswordResetActivity" />
+        <activity android:name=".activities.PdfDetailUserActivity" />
+        <activity android:name=".activities.ProfileEditActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".activities.PdfDetailActivityUser" />
+        <activity android:name=".activities.PdfListUserActivity" />
+        <activity android:name=".activities.PdfViewActivity" />
+        <activity android:name=".activities.PdfDetailActivity" />
+        <activity android:name=".activities.PdfEditActivity" />
+        <activity android:name=".activities.PdfListAdminActivity" />
+        <activity android:name=".activities.PdfAddActivity" />
+        <activity android:name=".activities.CategoryAddActivity" />
+        <activity android:name=".activities.DashboardAdminActivity" />
+        <activity android:name=".activities.DashboardUserActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

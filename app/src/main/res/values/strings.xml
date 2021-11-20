@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Be-Gain</string>
+    <string name="splash_welcome">Welcome to Be-Gain</string>
+    <string name="splash_msg">Let us learn Python together</string>
+    <string name="splash_btn">Get Started</string>
+    <string name="new_user_signup">New User? <b>SignUp</b></string>
+    <string name="splash_begain">Be-Gain</string> <!-- make signup bold-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">CLose navigation drawer</string>
+
+    <string name="app_description">Be-Gain  is  app  developed  based  on  Android  application,  its  a  educational  app  application  from where user can learn basic things about python.  Initially we have limited scope for Be-Gain application which is within Gyalpozhing, and in later parts we are going to extend scope as far demand of our project from user.  Be-Gain is only for python programming language, it is e-learning platform which has objectives like easy learning for learners, diversification of knowledge on python.  Be-Gain focuses on python because python is one of the highly rated plus most used programming language among many other programming language.<br></br><br></br><b>\n\nAim:</b><br></br>\nAim is to develop an application for e-learning where learners can access courses on python.
+        \n\nObjective:<br></br>\nThe  objective  of  our  project  is  to  provide  a  platform  for  interested  learners  to  start  their programming  journey  through  simple  and  informative  self  learning.   Further  persue  of  any knowledge requires proper basic which we aim to provide for our learners.<br></br><br></br>\n\n <b>Contact: </b>be-gain.gcit@rub.edu.bt</string>
+
+</resources>
